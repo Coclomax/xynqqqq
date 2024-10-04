@@ -528,15 +528,20 @@ hr {
   line-height: 42px;
   display: block;
   text-align: center;
-  float: right; }
+ }
 
 .game-explanation {
   margin-top: 50px; }
 
 @media screen and (max-width: 520px) {
   html, body {
-    font-size: 15px; }
-
+    margin: 0;
+    padding: 0;
+    background: rgba(21, 50, 87, 1);
+    color: #776e65;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+}
   body {
     margin: 20px 0;
     padding: 0 20px; }
@@ -756,3 +761,18 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+    @media screen and (max-width: 520px) {
+      .game-container .game-message a {
+          display: inline-block;
+          background: #8f7a66;
+          border-radius: 3px;
+          margin-top: 10px;
+          padding: 0 20px;
+          text-decoration: none;
+          color: #f9f6f2;
+          height: 40px;
+          line-height: 42px;
+          margin-left: 9px;
+      }
+  }
