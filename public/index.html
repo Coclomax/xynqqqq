@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>hashs</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      function initializeTelegramApp() {
+        if (window.Telegram && window.Telegram.WebApp) {
+          window.Telegram.WebApp.expand();
+          window.Telegram.WebApp.isVerticalSwipesEnabled = false;
+        } else {
+          console.error("Telegram WebApp is not loaded.");
+        }
+      }
+
+      window.addEventListener('load', initializeTelegramApp);
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
